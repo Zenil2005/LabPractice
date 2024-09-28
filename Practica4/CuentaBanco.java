@@ -93,9 +93,9 @@ public class CuentaBanco {
      */
 
     public void ImprimirInfo(){
-        System.out.println("El nombre del propietario de la cuenta es: " + nombre);
-        System.out.println("La número de cuenta es: " + cuenta);
-        System.out.println("El deposito inicial es: " + depositoInicial);
+        System.out.println("El nombre del propietario de la cuenta es: " + this.getNombre());
+        System.out.println("La número de cuenta es: " + this.getCuenta());
+        System.out.println("El deposito inicial es: " + this.getDepositoInicial());
         System.out.println();
     }
 
@@ -115,8 +115,12 @@ public class CuentaBanco {
      */
 
     public void RetirarDinero(double retiro){
-        depositoInicial = depositoInicial - retiro;
-        System.out.println("El dinero se ha retirado con éxito");
-        System.out.println();
+        if (this.getDepositoInicial()>=retiro){
+            depositoInicial = depositoInicial - retiro;
+            System.out.println("El dinero se ha retirado con éxito");
+            System.out.println();
+        }else{
+            System.out.println("No es posible realizar el retiro debido a la falta de recursos en la cuenta");
+        }
     }
 }
