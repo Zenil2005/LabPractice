@@ -44,16 +44,6 @@ public class StringP3 {
     }
 
     /**
-     * Método print
-     * Para imprimir la cadena
-     * 
-     */
-
-    public void ImprimirCad(){
-        System.out.println(cadena);
-    }
-
-    /**
      * Método Reemplazar Caracter
      * @param original -> Parámetro para el caracter original
      * @param reemplazo -> Parámetro para el caracter con el que se reemplazará

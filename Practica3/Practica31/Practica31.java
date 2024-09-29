@@ -16,7 +16,7 @@ public class Practica31{
     public static void main(String[]args){
 
         StringP3 n1 = new StringP3("Juanito");
-        StringP3 n2 = new StringP3("Emmnuel");
+        StringP3 n2 = new StringP3("Emmanuel");
         StringP3 n3 = new StringP3("Leonardo");
         StringP3 n4 = new StringP3("Daniel");
 

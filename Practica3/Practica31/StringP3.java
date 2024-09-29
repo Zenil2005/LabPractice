@@ -43,15 +43,6 @@ public class StringP3 {
         return this.cadena;
     }
 
-    /**
-     * Método print
-     * Para imprimir la cadena
-     * 
-     */
-
-    public void ImprimirCad(){
-        System.out.println(cadena);
-    }
 
     /**
      * Método Reemplazar Caracter
